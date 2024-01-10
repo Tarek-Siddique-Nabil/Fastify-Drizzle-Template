@@ -3,8 +3,8 @@ import { db } from "../Config/db";
 
 import { eq } from "drizzle-orm";
 
-import { logger } from "../utils/logger";
 import { users } from "../Models/user.model";
+import { logger } from "../Utils/logger";
 
 export const createUser = async (request: FastifyRequest, reply: FastifyReply) => {
   const { name }: { name: string } = request.body as { name: string };

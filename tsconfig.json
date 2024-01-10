@@ -14,7 +14,7 @@
     "baseUrl": "./",
     "paths": {
       "@/Config/*": ["Config/*"],
-      "@/utils/*": ["utils/*"],
+      "@/Utils/*": ["Utils/*"],
       "@/*": ["*"]
     },
     "outDir": "./dist",

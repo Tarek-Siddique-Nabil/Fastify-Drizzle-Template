@@ -1,9 +1,10 @@
 import { FastifyReply, FastifyRequest } from "fastify";
 import { config } from "./Config/config";
 import { db } from "./Config/db";
-import { logger } from "./utils/logger";
+
 import { migrate } from "drizzle-orm/node-postgres/migrator";
 import { buildServer } from "./Utils/server";
+import { logger } from "./Utils/logger";
 
 const main = async () => {
   const app = await buildServer();

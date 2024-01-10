@@ -2,7 +2,7 @@
 
 ## Tech Stack
 
-**Server:** fastify , drizzle-orm, postgress
+**Server:** fastify , drizzle-orm, postgresql
 
 ## Installation
 
@@ -16,6 +16,99 @@ Install
 ```bash
   cd project-name
   pnpm i
+```
+
+Devolopment
+
+#### (first Migration than start your development )
+
+```bash
+  cd project-name
+  npm run dev
+```
+
+```bash
+  cd project-name
+  pnpm run dev
+```
+
+Build
+
+```bash
+  cd project-name
+  npm run build
+```
+
+```bash
+  cd project-name
+  pnpm run build
+```
+
+### Migration / Generate sql
+
+```bash
+  cd project-name
+  npm run generate
+```
+
+```bash
+  cd project-name
+  pnpm run generate
+```
+
+### Migration Push in Db
+
+```bash
+  cd project-name
+  npm run push
+```
+
+```bash
+  cd project-name
+  pnpm run push
+```
+
+### Migration Delete / drop
+
+```bash
+  cd project-name
+  npm run drop
+```
+
+```bash
+  cd project-name
+  pnpm run drop
+```
+
+### Drizzle Studio
+
+```bash
+  cd project-name
+  npm run studio
+```
+
+```bash
+  cd project-name
+  pnpm run studio
+```
+
+## If you want to use another sql database instead postgresql
+
+```bash
+  "generate": "drizzle-kit generate:pg",
+  "push": "drizzle-kit push:pg",
+```
+
+### instead
+
+```bash
+  "generate":"drizzle-kit generate:mysql",
+  "push": "drizzle-kit push:mysql",
+```
+
+```bash
+  "generate":"drizzle-kit generate:sqlite",
+  "push": "drizzle-kit push:sqlite",
 ```
 
 ## FAQ
